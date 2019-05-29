@@ -10,9 +10,8 @@ class Person
     @hygiene = 8
   end
 
-  def happiness=(n)
-    n > 10 ? @happiness = 10 : @happiness = n
-    n < 10 && n < 0 ? @happiness = 0 : @happiness = n
+  def happiness=(happiness)
+    @happiness = happiness.clamp(0..10)
   end
 
   def hygiene=(n)
