@@ -15,7 +15,7 @@ class Person
     n < 0 ? @happiness = 0 : @happiness = n
   end
 
-  def hygiene=(happiness)
+  def hygiene=(n)
     n > 10 ? @hygiene = 10 : @hygiene
     n < 0 ? @hygiene = 0 : @hygiene = n
   end
