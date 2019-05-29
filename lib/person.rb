@@ -10,7 +10,7 @@ class Person
     @hygiene = 8
   end
 
-  def happiness=(happiness)
+  def happiness=(n)
     n > 10 ? @happiness = 10 : @happiness
     n < 0 ? @happiness = 0 : @happiness = n
   end
