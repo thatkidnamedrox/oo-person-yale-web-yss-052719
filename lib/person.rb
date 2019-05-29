@@ -11,7 +11,7 @@ class Person
   end
 
   def happiness=(n)
-    n > 10 ? @happiness = 10 : @happiness
+    n > 10 ? @happiness = 10 : @happiness = n
     n <= 10 && n < 0 ? @happiness = 0 : @happiness = n
   end
 
