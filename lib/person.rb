@@ -11,7 +11,7 @@ class Person
   end
 
   def happiness=(happiness)
-    @happiness = happiness.clamp(0..10)
+    @happiness = happiness.clamp(0, 10)
   end
 
   def hygiene=(n)
